@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 62.5%;
+	color: #444;
+	line-height: 1.7;
+	
+}
+
+:root{
+	scroll-behavior: smooth;
+}
+
+/*#########################################################################*/
+/*.............text-color..............*/
+	.text-red{
+		color: #e63946;
+	}
+
+	.text-white{
+		color: #f4f4f4;
+	}
+
+	.text-black{
+		color: #333;
+	}
+
+	.text-gray{
+		color: #555;
+	}
+/*.............text-color..............*/
+
+/*...............font-size.............*/
+	.header .navbar .logo{
+			font-size: 1.5rem;
+		}
+
+		li.nav-item{
+			font-size: 1rem;
+		}
+/*...............font-size.............*/
+
+/*................container................*/
+		.container{
+			max-width: 65rem;
+			width: 85%;
+			margin: 0 auto;
+		}
+/*................container................*/
+
+/*................btn start.................*/
+		.btn{
+			font-size: 1rem;
+			font-weight: 500;
+			text-decoration: none;
+			display: inline-block;
+			padding: 0.5em;
+			margin: 0.7em 0;
+		}
+/*................btn end..................*/
+/*########################################################################*/
+
+
+/*...............header start................*/
+	.header{
+		position: relative;
+		background: linear-gradient(rgba(240, 240, 240, 0), rgba(0, 0, 0, 0.304)) ,url('IMG/background.png');
+		height: 95vh;
+		width: 100%;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	/*..............Navbar start...............*/
+		.navbar::after{
+			content: " ";
+			display: block;
+			clear: both;
+		}
+
+		.header .navbar a{
+			/*color: white;*/
+			text-decoration: none;
+
+		}
+
+		.header .navbar a:hover{
+			text-decoration: underline solid white;
+		}
+
+		.header .navbar a:focus{
+			color: rgb(124, 124, 124);
+		}
+
+		/*for WT*/
+		.header .navbar .logo{
+
+			float: left;
+			color: white;
+			margin-top: 1.5rem;
+			font-weight: 700;
+			font-size: 2rem;
+		}
+
+		/*for UL*/
+		.header .navbar .nav-items{
+			float: right;
+			margin-top: 1.5rem;
+		}
+
+
+		li.nav-item{
+			display: inline-block;
+			padding: 0.9em;
+			font-size: 1.2rem;
+   		}
+	/*..............Navbar end...............*/
+
+	/*................Home-Page Content Style start.............*/
+		.header-content{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			/* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ; */
+		}
+
+		.header-content .heading{
+			font-size: 2rem;
+			font-weight: 700;
+		}
+
+		.header-content p{
+			font-size: 0.8rem;
+			word-spacing: 0.2rem;
+			padding-top: 0.5rem;
+			text-transform: uppercase;
+			font-weight: 300;
+		}
+
+		.header-content .btn-background{
+			background-color: #fff;
+			border-radius: 2rem;
+			padding: 0.7rem 1rem;
+		}
+
+		.header-content .btn-background:hover{
+			background-color: #E4E4E4;
+		}
+	/*................Home-Page Content Style end.............*/
+/*...............header end.................*/
+
+
+/*..........................Start 2nd page................................*/
+	.show{
+		background: rgba(221, 221, 221, 0.716);
+		padding: 10rem 0;
+	}
+	
+	.row{
+		height: 20rem;
+		background: #fff;
+		box-shadow: 0px 0px 20px 0px #aaa;
+		
+	}
+
+	.row1{
+		margin-bottom: 6rem;
+	}
+
+	.row1 .img-box, .row2 .text-box{
+		float: left;
+		width: 50%;
+	}
+
+	.row2 .img-box, .row1 .text-box{
+		float: right;
+		width: 50%;
+	}
+
+	.row .img-box, .row .text-box{
+		height: 100%;
+	}
+
+	.row .img-box img{
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+    /*..................text-box design start..................*/
+	.row .text-box{
+		padding: 2rem;
+		object-fit: cover;
+	}
+
+	.row .text-box h1{
+		font-size: 2rem;
+		font-weight: 500;
+		letter-spacing: 0.1em;
+	}
+
+	.row .text-box p{
+		font-size: 0.8rem;
+		letter-spacing: 0.15em;
+		font-weight: 500;
+		margin-bottom: 1rem;
+	}
+
+	.row .text-box a{
+		text-decoration: none;
+		font-size: 1.2rem;
+		font-weight: 500;
+		border: 3px solid #e63946;
+		padding: 0.5rem 1.3rem;
+		border-radius: 2rem;
+	}
+
+	.row .text-box a:hover{
+			background-color: #F1F1F1;
+	}
+
+	.row::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	/*.....................text-box design end..............*/
+
+/*...........................2nd page end.................................*/
+
+/*--------------------3rd page style start---------------------*/
+	.feature{
+		padding: 7rem 0;
+	}
+
+	.feature .box-wrapper{
+		box-shadow: 0px 0px 20px 0px #aaa;
+	}
+
+	.feature .box-wrapper .box{
+		display: block;
+		width: 33.3%;
+		float: left;
+		padding: 2rem;
+		/*margin: 4rem 0;*/
+		text-align: center;
+	}
+
+	.feature .box-wrapper .box-1, .box-3{
+		background: #333;
+	}
+
+	.feature .box-wrapper .box-2{
+		background: #e63946;
+	}
+
+	.feature .box-wrapper .box h2{
+		font-size: 1.2rem;
+		font-weight: 500;
+		margin-bottom: 1rem;
+	}
+
+	.feature .box-wrapper .box p{
+		font-size: 0.7rem;
+		word-spacing: 0.3em;
+	}
+
+
+	.box-wrapper::after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+/*---------------------3rd page style end-----------------------*/
+
+/*+++++++++++++++++++++ Footer Start +++++++++++++++++++++++++++++++++++*/
+	.footer{
+		background-color: #333;
+		height: 17.7vh;
+	}
+
+	.footer .box-footer .icon{
+		text-align: center;
+		padding: 0.18rem;
+	}
+
+	.footer .box-footer .icon I{
+		padding: 0.7rem;
+	}
+
+	.footer .box-footer .icon p{
+		font-size: 0.75rem;
+		word-spacing: 0.3em;
+		font-weight: 500;
+	}
+/*+++++++++++++++++++++ Footer end +++++++++++++++++++++++++++++++++++*/
+
+@media(max-width:  500px){
+	html{
+		font-size: 31.25%;
+	}
+
+	/* body{
+		background: ;
+	} */
+}
+
+
+
+
+
+
+
+
+
+
+.bubbles img{
+    width: 5rem;
+    animation: bubble 6s linear infinite;
+	opacity: 0;
+}
+
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -5px;
+}
+
+@keyframes bubble {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s; 
+    width: 2.5rem;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s; 
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 2.5rem; 
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s; 
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3s; 
+}
+.bubbles img:nth-child(6){
+    animation-delay: 6s; 
+    width: 2rem;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s; 
+    width: 3.5rem;
+}
