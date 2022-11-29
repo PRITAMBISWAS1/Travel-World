@@ -276,40 +276,23 @@ body{
 /*..............adress-form style end.....................*/
 
 /*+++++++++++++++++++++ Footer Start +++++++++++++++++++++++++++++++++++*/
-	.footer{
-		background-color: #333;
-		height: 17.7vh;
-	}
+.footer{
+	background-color: #333;
+	height: 17.7vh;
+}
 
-	.footer .box-footer .icon{
-		text-align: center;
-		padding: 0.18rem;
-	}
+.footer .box-footer .icon{
+	text-align: center;
+	padding: 0.18rem;
+}
 
-	.icon p{
-		color: #fff;
-	}
+.footer .box-footer .icon I{
+	padding: 0.7rem;
+}
 
-	.btn-primary{
-		display: inline-block;
-		padding: 1em 2.5em;
-		text-decoration: none;
-		border-radius: 50px;
-		cursor: pointer;
-		outline: none;
-		margin-top: 1em;
-		color: rgb(0, 0, 0);
-		background: #fff;
-		margin: 1rem;
-	}
-
-
-	.icon a::first-line{
-		font-size: 1.8rem;
-	}
-	
-	.icon p{
-		color: #fff;
-		font-size: 1.5rem;
-	}
+.footer .box-footer .icon p{
+	font-size: 0.75rem;
+	word-spacing: 0.3em;
+	font-weight: 500;
+}
 /*+++++++++++++++++++++ Footer end +++++++++++++++++++++++++++++++++++*/
